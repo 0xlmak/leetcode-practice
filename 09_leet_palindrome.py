@@ -13,7 +13,5 @@ class Solution:
         reverse_x_lst: str = ""
         for i in range(len(x_lst) - 1, -1, -1):
             reverse_x_lst += x_lst[i]
-        
         # compare strings of the integer input and its reversed 
         return x_lst == reverse_x_lst
-        
