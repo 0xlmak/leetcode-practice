@@ -14,7 +14,7 @@ class Solution:
             bool_s_lst.append(1)  # set as false by default
 
         # identify, label and convert only the special string pairs
-        while (id1 < len(s_lst) and id2 < len(s_lst)):
+        while id1 < len(s_lst) and id2 < len(s_lst):
             if s_lst[id1] == "I" and s_lst[id2] == "V":
                 num += 4
                 bool_s_lst[id1] = 0
@@ -64,11 +64,11 @@ class Solution:
                 elif s_lst[i] == "X":
                     num += 10
                 elif s_lst[i] == "L":
-                    num += 50     
+                    num += 50
                 elif s_lst[i] == "C":
                     num += 100
                 elif s_lst[i] == "D":
                     num += 500
                 elif s_lst[i] == "M":
-                    num += 1000 
+                    num += 1000
         return num
