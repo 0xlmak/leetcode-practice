@@ -5,7 +5,7 @@ class Solution:
     def romanToInt(self, s: str) -> int:
         id1: int = 0 # track the 1st part of special string pairs 
         id2: int = 1 # track the 2nd part of special string pairs 
-        bool_s_lst: List[bool] = [] # boolean list to track special pairs 
+        bool_s_lst: List[int] = [] # list to track special pairs 
         s_lst: List[str] = [] # input string as a list
         num: int = 0 # conversion to integer
 
