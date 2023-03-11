@@ -11,6 +11,7 @@ class Solution:
         for c in s:
             s_lst.append(c)
             
+            
         # identify, label and convert only the special string pairs
         while id1 < len(s_lst):
             if id2 == len(s_lst):
