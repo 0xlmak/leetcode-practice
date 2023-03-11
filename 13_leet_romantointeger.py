@@ -5,18 +5,16 @@ class Solution:
     def romanToInt(self, s: str) -> int:
         id1: int = 0  # track the 1st part of special string pairs
         id2: int = 1  # track the 2nd part of special string pairs
-        #bool_s_lst: List[int] = []  # list to track special pairs
         s_lst: List[str] = []  # input string as a list
         num: int = 0  # conversion to integer
 
         for c in s:
             s_lst.append(c)
-            #bool_s_lst.append(1)  # set as false by default
-
+            
         # identify, label and convert only the special string pairs
         while id1 < len(s_lst):
             if id2 == len(s_lst):
-                id2 = id1  
+                id2 = id1
             if s_lst[id1] == "I" and s_lst[id2] == "V":
                 num += 4
                 id1 += 2
@@ -58,4 +56,4 @@ class Solution:
                     num += 1000
                 id1 += 1
                 id2 += 1
-        return num 
+        return num
