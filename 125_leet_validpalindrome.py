@@ -9,7 +9,7 @@ class Solution:
         while i != j and i < len(clean_s):
             # if character at i not equal to the one at j then return False
             if clean_s[i] != clean_s[j]:
-                return False 
+                return False
             else:
                 i += 1
                 j = len(clean_s) - i - 1
