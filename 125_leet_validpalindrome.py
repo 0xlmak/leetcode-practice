@@ -5,7 +5,7 @@ class Solution:
         # initialize two trackers i = 0 and j = n-i-1 = n-1
         i: int = 0
         j: int = len(clean_s) - 1
-        # iterate over the cleaned string of size n till character at i equals the one at j = n-i-1
+        # iterate over phrase of size n till value at i = value at j = n-i-1
         while i != j and i < len(clean_s):
             # if character at i not equal to the one at j then return False
             if clean_s[i] != clean_s[j]:
