@@ -1,9 +1,9 @@
-from typing import List
+from typing import List, Dict
 
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        bracket_pairs: dict[str, str] = {
+        bracket_pairs: Dict[str, str] = {
             "(": ")",
             "[": "]",
             "{": "}",
