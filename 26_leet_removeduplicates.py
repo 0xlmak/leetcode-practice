@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        i: int = 1  # initialize nums tracker
+        i = 1  # initialize nums tracker
         # iterate over nums
         while i < len(nums):
             # if a duplicate is found remove the most recent element
