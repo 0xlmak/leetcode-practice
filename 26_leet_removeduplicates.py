@@ -8,8 +8,8 @@ class Solution:
         while i < len(nums):
             # if a duplicate is found remove the most recent element
             if nums[i] == nums[i - 1]:
-	            nums.pop(i)
+                nums.pop(i)
             else:
                 i += 1
-        # return the resulting nums 
+        # return the resulting nums
         return len(nums)
