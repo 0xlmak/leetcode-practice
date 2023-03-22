@@ -14,13 +14,13 @@ class Solution:
         end = k - 1
         while start < end:
             nums[start], nums[end] = nums[end], nums[start]
-            start+=1
-            end-=1
+            start += 1
+            end -= 1
         # reverse the last n-k elements if nums has n elements
         start = k
         end = len(nums) - 1
         while start < end:
             nums[start], nums[end] = nums[end], nums[start]
-            start+=1
-            end-=1
+            start += 1
+            end -= 1
         return None
