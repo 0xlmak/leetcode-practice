@@ -6,8 +6,21 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # move incrementally the last element to the top at each k step
-        for m in range(1, k + 1):
-            for i in range(len(nums) - 1, 0, -1):
-                nums[i], nums[i - 1] = nums[i - 1], nums[i]
+        # reverse the input array
+        nums.reverse()
+        k = k % len(nums)
+        # reverse the first k elements
+        start = 0
+        end = k - 1
+        while start < end:
+            nums[start], nums[end] = nums[end], nums[start]
+            start+=1
+            end-=1
+        # reverse the last n-k elements if nums has n elements
+        start = k
+        end = len(nums) - 1
+        while start < end:
+            nums[start], nums[end] = nums[end], nums[start]
+            start+=1
+            end-=1
         return None
