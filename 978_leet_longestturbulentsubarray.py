@@ -14,7 +14,7 @@ class Solution:
             else:
                 res = len(arr)
         elif len(arr) > 2:
-            while e < len(arr) - 1: 
+            while e < len(arr) - 1:
                 if arr[e - 1] > arr[e] < arr[e + 1] or arr[e - 1] < arr[e] > arr[e + 1]:
                     e += 1
                 else:
